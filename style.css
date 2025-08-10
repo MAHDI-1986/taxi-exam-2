@@ -1,0 +1,162 @@
+/* General Layout */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Password Gate */
+#password-gate {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#password-gate input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#password-gate button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#password-gate button:hover {
+  background-color: #145ea8;
+}
+
+/* Quiz */
+#question {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+#options button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+#options button:hover:not(:disabled) {
+  background-color: #e3f2fd;
+}
+
+#options button.correct {
+  background-color: #c8e6c9;
+  border-color: #388e3c;
+  color: #2e7d32;
+  cursor: default;
+}
+
+#options button.wrong {
+  background-color: #ffcdd2;
+  border-color: #d32f2f;
+  color: #b71c1c;
+  cursor: default;
+}
+
+#options button.selected {
+  border-color: #1976d2;
+  background-color: #bbdefb;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  min-height: 1.5em;
+}
+
+#navigation {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#navigation button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #1976d2;
+  color: white;
+  transition: background 0.3s;
+}
+
+#navigation button:hover:not(:disabled) {
+  background-color: #145ea8;
+}
+
+#navigation button:disabled {
+  background-color: #a0a0a0;
+  cursor: default;
+}
+
+#result {
+  margin-top: 40px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Selectors */
+#start-buttons select {
+  padding: 10px;
+  font-size: 1em;
+  margin: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#start-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#start-buttons button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #1976d2;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#start-buttons button:hover {
+  background-color: #145ea8;
+}

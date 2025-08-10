@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Taxi License Test App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ✅ Main App -->
+    <div id="app-container">
+      <h1>Training & Exam Quiz</h1>
+
+      <div id="start-buttons">
+        <label for="train-type-selector">Training Type:</label>
+        <select id="train-type-selector">
+          <option value="1">Train 1 (Fixed Order)</option>
+          <option value="2">Train 2 (Shuffled Order)</option>
+        </select>
+
+        <label for="part-selector">Part:</label>
+        <select id="part-selector">
+          <option value="0">Part 1</option>
+          <option value="1">Part 2</option>
+          <option value="2">Part 3</option>
+          <option value="3">Part 4</option>
+          <option value="4">Part 5</option>
+          <option value="5">Part 6</option>
+        </select>
+
+        <button id="start-exam-btn">Start Exam</button>
+      </div>
+
+      <div id="quiz-container">
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="feedback"></div>
+
+        <div id="navigation">
+          <button id="prev-btn">Previous</button>
+          <button id="next-btn">Next</button>
+          <button id="submit-btn" class="hidden">Submit Exam</button>
+        </div>
+      </div>
+
+      <div id="result" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
